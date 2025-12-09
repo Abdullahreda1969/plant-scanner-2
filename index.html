@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماسح النباتات - الإصدار 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    <h1>🌿 ماسح النباتات - الإصدار 2</h1>
+    
+    <!-- منطقة السحب والإفلات -->
+    <div class="upload-area" id="drop-area">
+        <p>⬆️ اسحب صورة نبات هنا أو انقر للاختيار</p>
+        <input type="file" id="file-input" accept="image/*" hidden>
+        <button onclick="document.getElementById('file-input').click()">
+            اختر صورة
+        </button>
+        <p id="file-name">لم يتم اختيار أي ملف</p>
+        <button id="clear-btn" disabled>مسح</button>
+    </div>
+    
+    <!-- سيكون هنا عرض النتائج لاحقاً -->
+    <div id="result" class="hidden">
+        <h2>النتائج:</h2>
+        <div id="plant-info"></div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
